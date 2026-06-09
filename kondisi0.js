@@ -12,7 +12,7 @@ input.question('Berapa kali diulang? ', (frequensi) => {
             return input.close()
         }
         if (frequensi<1){
-            console.log('tidak ada output karena frequensi 0ad')
+            console.log('tidak ada output karena frequensi 0')
             return input.close()
         }
 
