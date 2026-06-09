@@ -5,10 +5,14 @@ const input = readline.createInterface({
     output: process.stdout
 });
 
-input.question('Berapa kali diulang? ', (apa) => {
-    apa = parseInt(apa);
+input.question('Berapa kali diulang? ', (frequensi) => {
+    frequensi = parseInt(frequensi);
 
-    for (let i = 0; i < apa; i++) {
+    for (let i = 0; i < frequensi; i++) {
+        if (frequensi>10){
+            console.log('frequensi terlalu besar')
+            return input.close()
+        }
         console.log(i + 1);
     }
 
